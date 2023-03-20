@@ -11,15 +11,33 @@
   height: 40px;
   transition: $color-transition;
   padding-left: 42px;
+
+  &:focus,
+  &:hover {
+    color: $acent-color;
+    outline: transparent;
+
+    &:focus + .grid-modal__icon,
+    &:hover + .grid-modal__icon {
+      fill: $acent-color;
+    }
+  }
 }
 
-.grid-modal__comment {
-  @include bordered;
+.comment {
+  @extend .grid-modal__input;
   height: 120px;
   resize: none;
   padding-top: 12px;
   padding-left: 16px;
-  margin-top: 4px;
-  color: $modal-form-color;
-  transition: $color-transition;
+}
+
+.grid-modal__icon {
+  fill: $main-text-color;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transition: $fill-transition;
 }

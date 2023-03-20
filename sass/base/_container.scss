@@ -10,6 +10,7 @@
 }
 
 .header-wrap {
+  @extend .conteiner;
   display: flex;
   align-items: center;
 }
@@ -36,9 +37,7 @@
 /* FOOTER */
 
 .conteiner-footer {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  @extend .conteiner;
   display: flex;
   align-items: baseline;
 }
@@ -67,13 +66,6 @@
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-}
-
-.comment {
-  height: 120px;
-  resize: none;
-  padding-top: 12px;
-  padding-left: 16px;
 }
 
 /* NAVIGATION BUTTON */
