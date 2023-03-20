@@ -1,0 +1,25 @@
+@mixin bordered {
+  border: solid 1px;
+  border-radius: 4px;
+}
+
+.grid-modal__input {
+  @include bordered;
+  margin-top: 4px;
+  color: $modal-form-color;
+  width: 100%;
+  height: 40px;
+  transition: $color-transition;
+  padding-left: 42px;
+}
+
+.grid-modal__comment {
+  @include bordered;
+  height: 120px;
+  resize: none;
+  padding-top: 12px;
+  padding-left: 16px;
+  margin-top: 4px;
+  color: $modal-form-color;
+  transition: $color-transition;
+}
