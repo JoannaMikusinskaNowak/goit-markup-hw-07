@@ -62,9 +62,13 @@ footer {
   overflow: hidden;
 }
 
-.section {
+.section, .section-products {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.section-products {
+  padding-top: 0px;
 }
 
 .conteiner, .conteiner-footer, .header-wrap {
